@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Burger Addict</title>
+<link rel="icon" href="Icon.png">
+<style> 
+body{
+background-color:#fcf9e1;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+*{
+  font-family:calibri;
+}
+
+#addict1{
+  position:absolute;
+  width:300px;
+  height:300px;
+  top:40px;
+  left:595px;
+  z-index:10;
+}
+
+#featureDiv2{
+  background-color:lavender;
+  width:500px;
+  height:340px;
+  position:relative;
+  top:48%;
+  left:31.8%;
+  font-size:20px;
+  text-align:center;
+  padding:10px;
+  font-family:calibri;
+}
+
+#menu{
+  display:inline-block;
+  font-weight:bold;
+  background-color:#ffc600;
+  border:solid 2px #FEE715FF;
+  text-align:center;
+  width:30%;
+  font-size:30px;
+  font-family:calibri;
+  margin-left:500px;
+  position:fixed;
+}
+#menu:hover{
+  background-color:#FFF494;
+  border-radius:2px;
+}
+#message{
+text-align:justify;
+}
+
+.red{
+color:#e83b2e;
+}
+</style>
+<script>
+window.onload = function(){
+    document.getElementById('message').innerHTML = "Hello <span class='red'>" + localStorage.getItem('firstName1')+"</span>, Your  table reservation booking for <span class='red'>"+localStorage.getItem('guests1')+"</span> guests on '<span class='red'>"+localStorage.getItem('reserv1')+"</span>' from '<span class='red'>"+localStorage.getItem('time1')+"</span>' has been successful, You will receive a reminder message on '<span class='red'>"+localStorage.getItem("phone1")+"</span>'";
+};
+</script>
+</head>
+<body>
+<img id="addict1" src="addict.png">
+
+<div id="menu" onclick="window.location='Project.html'">Back To Main Page</div> 
+
+<div id="featureDiv2">
+<span style="font-size:35px;">&#x1f44d;<br>
+<b id="message" > </b></span> 
+
+</div>
+</body>
+</html>

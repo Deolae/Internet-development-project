@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Burger Addict</title>
+<link rel="stylesheet" href="beveragesTab.css">
+<link rel="icon" href="Icon.png">
+</head>
+
+<body>
+<img id="addict1" src="addict.png">
+<div id="head1div">
+<h1 class="titles"><pre>BURGER                            ADDICT</pre></h1>
+</div>
+
+<nav id="bMenu">  Choose Your Beverage &#x2b07; 
+<ol>
+<li onclick="Beverage1()">Coconut Mai Tai</li>
+<li onclick="Beverage2()">Tropical Twisters</li>
+<li onclick="Beverage3()">Soft Drinks</li>
+<li onclick="Beverage4()">Water</li>
+</ol>
+</nav>
+ 
+<div id="menu" onclick="window.location='Project.html'">&#x21a9; Main Page</div> 
+
+<br>
+<br>
+
+<table border="1" width="75%">
+<tr><td colspan="2"><img id="img" src="beverage1.jpg" width="21%"></td></tr>
+<tr><th id="name">Coconut Mai Tai</th><th id="price">2.49$</th></tr>
+<tr><td id="desc" colspan="2">Orange juice, Pineapple juice, Coconut cream, Maraschino cherry, Ice, Grenadine</td></tr>
+</table>
+
+<script>
+function Beverage1(){
+  document.getElementById("name").innerHTML="Coconut Mai Tai";
+  document.getElementById("price").innerHTML="2.49$";
+  document.getElementById("desc").innerHTML="Orange juice, Pineapple juice, Coconut cream, Maraschino cherry, Ice, Grenadine";
+  document.getElementById("img").src="beverage1.jpg";
+  document.getElementById("img").style.width="21%";
+}
+function Beverage2(){
+  document.getElementById("name").innerHTML="Tropical Twisters";
+  document.getElementById("price").innerHTML="3.49$";
+  document.getElementById("desc").innerHTML="Lemon-Lime Soft Drink, Pineapple Juice, Fruit Drink (We Use Trop50 Raspberry Acai), Coconut Rum or Vodka (If requested)";
+  document.getElementById("img").src="beverage2.jpg";
+  document.getElementById("img").style.width="29%";
+}
+function Beverage3(){
+  document.getElementById("name").innerHTML="Soft drinks";
+  document.getElementById("price").innerHTML="0.99$";
+  document.getElementById("desc").innerHTML="Coca Cola, Sprite,  Mirinda(Orange or Strawberry), Dr. Pepper";
+  document.getElementById("img").src="beverage3.jpg";
+  document.getElementById("img").style.width="45%";
+}
+function Beverage4(){
+  document.getElementById("name").innerHTML="Water";
+  document.getElementById("price").innerHTML="0.49$";
+  document.getElementById("desc").innerHTML="Iced Cold or Warm Water";
+  document.getElementById("img").src="beverage4.jpg";
+  document.getElementById("img").style.width="52%";
+}
+</script>
+</body>
+</html>

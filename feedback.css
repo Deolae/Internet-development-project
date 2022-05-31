@@ -1,0 +1,86 @@
+body{
+background-color:#fcf9e1;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+div{
+width:600px;
+background-color:lavender;
+padding:40px;
+border-radius:15px;
+margin-left:auto;
+margin-right:auto;
+margin-top:10%;
+}
+
+input[type=email]{
+width:100%;
+padding: 12px 20px;
+margin:8px 0px;
+border:solid 1px #ccc;
+border-radius:4px;
+display:block;
+}
+
+input[type=email]:hover{
+box-shadow: 0px 0px 10px #d45d87;
+}
+input[type=email]:active{
+background-color:lightyellow;
+}
+
+textarea{
+width:100%;
+padding: 12px 20px;
+margin:8px 0px;
+border:solid 1px #ccc;
+border-radius:4px;
+display:block;
+}
+textarea:hover{
+box-shadow: 0px 0px 10px #d45d87;
+}
+textarea:active{
+background-color:lightyellow;
+}
+
+select{
+width:100%;
+padding: 12px 20px;
+margin:8px 0px;
+border:solid 1px #ccc;
+border-radius:4px;
+display:block;
+}
+select:hover{
+box-shadow: 0px 0px 10px #d45d87;
+}
+select:active{
+background-color:lightyellow;
+}
+
+input[type=submit]{
+width:15%;
+background-color:#000080;
+color:white;
+padding:10px;
+border-style:none;
+border-radius:10px;
+}
+input[type=submit]:hover{
+background-color:#d45d87;
+}
+
+#featureDiv2{
+  background-color:lavender;
+  width:350px;
+  height:60px;
+  position:absolute;
+  top:-110px;
+  left:37.5%;
+  font-size:25px;
+  text-align:center;
+  padding:10px;
+  font-family:calibri;
+}

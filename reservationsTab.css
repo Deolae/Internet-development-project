@@ -1,0 +1,112 @@
+body{
+background-image:url("Background4.jpeg");
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+*{
+  font-family:calibri;
+}
+
+#head1div{
+  display:block;
+  width:50%;
+  background-color:#FEE715FF;
+  position:sticky;
+  margin:auto;
+  z-index:1;
+  font-size:17px;
+}
+
+#menu{
+  display:inline-block;
+  font-weight:bold;
+  background-color:#ffc600;
+  border:solid 2px #FEE715FF;
+  text-align:center;
+  width:30%;
+  font-size:30px;
+  font-family:calibri;
+  margin-left:1010px;
+  margin-top:2px;
+  position:static;
+}
+#menu:hover{
+  background-color:#FFF494;
+  border-radius:2px;
+}
+
+#addict1{
+  position:absolute;
+  width:190px;
+  height:150px;
+  top:-15px;
+  left:665px;
+  z-index:10;
+}
+
+#res{
+border:groove 1px lavender;
+border-radius:5px;
+background-color:#fcf9e1;
+width:50%;
+display:block;
+margin-left:350px;
+margin-top:100px;
+padding:10px;
+font-size:25px;
+}
+
+#textbox{
+  height:100px;
+}
+
+#submit{
+width:21%;
+background-color:#000080;
+color:white;
+padding:10px;
+border-style:none;
+border-radius:10px;
+font-size:16px;
+}
+#submit:hover{
+background-color:#bd3c58;
+color:white;
+}
+
+.titles{
+  text-shadow:0px 0px 1px black;
+  text-align:center;
+  font-family:calibri;
+}
+
+.titles:hover{
+  text-shadow:0px 0px 1px white;
+}
+
+.box{
+  height:30px;
+  width:200px;
+}
+.box2{
+  height:30px;
+  width:416px;
+}
+
+.time{
+  background-color:white;
+  border-radius:1px;
+}
+.time:hover{
+  background-color:purple;
+  color:white;
+}
+.time:focus{
+  background-color:purple;
+  color:white;
+}
+.time-selected{
+      background-color:purple;
+      color:white;
+}

@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Burger Addict</title>
+<link rel="stylesheet" href="burgersTab.css">
+<link rel="icon" href="Icon.png">
+</head>
+
+<body>
+<img id="addict1" src="addict.png">
+<div id="head1div">
+<h1 class="titles"><pre>BURGER                            ADDICT</pre></h1>
+</div>
+
+<nav id="bMenu"> Choose Your Burger &#x2b07;
+<ol>
+<li onclick="burger1()">Furious Heat</li>
+<li onclick="burger2()">Classic Addict</li>
+<li onclick="burger3()">Mighty Tower</li>
+</ol>
+</nav>
+ 
+<div id="menu" onclick="window.location='Project.html'">&#x21a9; Main Page</div> 
+
+<br>
+<br>
+
+<table border="1" width="75%">
+<tr><td colspan="2"><img id="img" src="burger1.jpg" width="42%"></td></tr>
+<tr><th id="name">Furious Heat</th><th id="price">4.99$</th></tr>
+<tr><td id="desc" colspan="2">300GM Beef, jalapenos, Onion, lettuce, Addict sauce, Served with fries of your choice and a soft drink</td></tr>
+</table>
+<script>
+function burger1(){
+  document.getElementById("name").innerHTML="Furious Heat";
+  document.getElementById("price").innerHTML="4.99$";
+  document.getElementById("desc").innerHTML="300GM Beef, jalapenos, Onion, lettuce, Addict sauce, Served with fries of your choice and a soft drink";
+  document.getElementById("img").src="burger1.jpg";
+  document.getElementById("img").style.width="42%";
+}
+function burger2(){
+  document.getElementById("name").innerHTML="Classic Addict";
+  document.getElementById("price").innerHTML="3.99$";
+  document.getElementById("desc").innerHTML="150GM Beef, Lettuce, Tomato, Onion, Dijon Mustard, Cheese slice, black pepper, Addict sauce, salt, Served with fries of your choice and a soft drink";
+  document.getElementById("img").src="burger2.jpg";
+  document.getElementById("img").style.width="42%";
+}
+function burger3(){
+  document.getElementById("name").innerHTML="Mighty Tower";
+  document.getElementById("price").innerHTML="5.99$";
+  document.getElementById("desc").innerHTML="Two 300GM Beef slices, Tomato, Rocca, Bacon slices, Two Cheese slices, The Green Addict sauce, Onion,, Served with fries of your choice and a soft drink";
+  document.getElementById("img").src="burger3.jpg";
+  document.getElementById("img").style.width="39%";
+}
+</script>
+</body>
+</html>

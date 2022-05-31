@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Burger Addict</title>
+<link rel="stylesheet" href="dessertsTab.css">
+<link rel="icon" href="Icon.png">
+</head>
+
+<body>
+<img id="addict1" src="addict.png">
+<div id="head1div">
+<h1 class="titles"><pre>BURGER                            ADDICT</pre></h1>
+</div>
+
+<nav id="bMenu">  Choose Your Dessert &#x2b07;
+<ol>
+<li onclick="dessert1()">Oreo Crepe</li>
+<li onclick="dessert2()">Lotus Cheesecake Waffle</li>
+<li onclick="dessert3()">Fudge Ice Cream</li>
+</ol>
+</nav>
+ 
+<div id="menu" onclick="window.location='Project.html'"> &#x21a9; Main Page</div> 
+
+<br>
+<br>
+
+<table border="1" width="75%">
+<tr><td colspan="2"><img id="img" src="dessert1.jpg" width="37%"></td></tr>
+<tr><th id="name">Oreo Crepe</th><th id="price">3.49$</th></tr>
+<tr><td id="desc" colspan="2">Crushed Oreo biscuit spread over Oreo cream topped with caramel</td></tr>
+</table>
+
+<script>
+function dessert1(){
+  document.getElementById("name").innerHTML="Oreo Crepe";
+  document.getElementById("price").innerHTML="3.49$";
+  document.getElementById("desc").innerHTML="Crushed Oreo biscuit spread over Oreo cream topped with caramel";
+  document.getElementById("img").src="dessert1.jpg";
+  document.getElementById("img").style.width="37%";
+}
+function dessert2(){
+  document.getElementById("name").innerHTML="Lotus Cheesecake Waffle";
+  document.getElementById("price").innerHTML="4.99$";
+  document.getElementById("desc").innerHTML="Crushed digestive biscuit spread over cheese cream topped with your choice of blueberry or strawberry";
+  document.getElementById("img").src="dessert2.jpg";
+  document.getElementById("img").style.width="48%";
+}
+function dessert3(){
+  document.getElementById("name").innerHTML="Fudge Ice Cream";
+  document.getElementById("price").innerHTML="2.99$";
+  document.getElementById("desc").innerHTML="Chocolate fudge with hot fudge topping and vanilla ice cream with chops of Oreo on top";
+  document.getElementById("img").src="dessert3.jpg";
+  document.getElementById("img").style.width="55%";
+}
+</script>
+</body>
+</html>
