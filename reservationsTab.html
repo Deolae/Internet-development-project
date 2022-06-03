@@ -4,7 +4,9 @@
 <link rel="stylesheet" href="reservationsTab.css">
 <link rel="icon" href="Icon.png">
 <script>
-function timePick(button) {
+function timePick(button,rtime) {
+var time2 = document.getElementById(rtime).value;
+localStorage.setItem("time1",time2);
 var elem = document.getElementsByClassName("time-selected")[0];      
   if (elem) {
     elem.className = "time";
@@ -23,8 +25,6 @@ var reserv2 = document.getElementById("reserv").value;
 localStorage.setItem("reserv1",reserv2);
 var phone2 = document.getElementById("phone").value;
 localStorage.setItem("phone1",phone2);
-var time2 = document.getElementById("rTime").value;
-localStorage.setItem("time1",time2);
 }
 </script>
 </head>
@@ -36,15 +36,15 @@ localStorage.setItem("time1",time2);
 <div id="menu" onclick="window.location='Index.html'">&#x21a9; Main Page</div>
 
 <div id="res">
-<form method="post" action="confirmedReservation.html" onsubmit="sendInfo()">
+<form name="reservation" method="post" action="confirmedReservation.html" onsubmit="sendInfo()">
 <pre>  Full Name:     <input id="firstName" class="box" placeholder="First Name" name="firstName" autocomplete="off" required>   </input><input class="box" placeholder="Last Name" name="lastName" autocomplete="off"></input></pre>
 <pre>  Phone:            <input id="phone" class="box2" name="phone" autocomplete="off" required maxlength="10"></input></pre>
 <pre>  # Of Guests:   <input type="number" id="guests" class="box2" name="guests" autocomplete="off" required min="0"  max="10"></input></pre>
 <pre>  Date:               <input id="reserv" class="box2"  type="date" name="setTodaysDate" required></input></pre>
-<pre>  Time:          <button id="rTime" type="button" class="time" onclick="timePick(this);" value="12:00PM to 2:00PM">12:00PM - 2:00PM</button> <button type="button" class="time" onclick="timePick(this)" value="2:00PM to 4:00PM">2:00PM - 4:00PM</button> <button type="button" class="time" onclick="timePick(this)" value="4:00PM to 6:00PM">4:00PM-6:00PM</button> <button type="button" class="time" onclick="timePick(this)" value="6:00PM to 8:00PM">6:00PM - 8:00PM</button></pre>
+<pre>  Time:          <button id="rTime1" type="button" class="time" onclick="timePick(this,'rTime1');" value="12:00PM to 2:00PM">12:00PM - 2:00PM</button> <button id="rTime2" type="button" class="time" onclick="timePick(this,'rTime2')" value="2:00PM to 4:00PM">2:00PM - 4:00PM</button> <button id="rTime3" type="button" class="time" onclick="timePick(this,'rTime3')" value="4:00PM to 6:00PM">4:00PM-6:00PM</button> <button id="rTime4" type="button" class="time" onclick="timePick(this,'rTime4')" value="6:00PM to 8:00PM">6:00PM - 8:00PM</button></pre>
 <pre>  Notes: 
-                      <textarea class="box2" name="guests" id="textbox"></textarea></pre>
-<pre>                                                <input id="submit" type="submit"></input></pre>
+                      <textarea name="notes" class="box2" name="guests" id="textbox"></textarea></pre>
+<pre>                                                <input name="submit" id="submit" type="submit"></input></pre>
 </form>
 </div>
 
