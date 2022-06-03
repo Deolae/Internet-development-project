@@ -36,7 +36,7 @@ localStorage.setItem("phone1",phone2);
 <div id="menu" onclick="window.location='Index.html'">&#x21a9; Main Page</div>
 
 <div id="res">
-<form name="reservation" method="post" action="confirmedReservation.html" onsubmit="sendInfo()">
+<form data-netlify='true' name="reservation" method="post" action="confirmedReservation.html" onsubmit="sendInfo()">
 <pre>  Full Name:     <input id="firstName" class="box" placeholder="First Name" name="firstName" autocomplete="off" required>   </input><input class="box" placeholder="Last Name" name="lastName" autocomplete="off"></input></pre>
 <pre>  Phone:            <input id="phone" class="box2" name="phone" autocomplete="off" required maxlength="10"></input></pre>
 <pre>  # Of Guests:   <input type="number" id="guests" class="box2" name="guests" autocomplete="off" required min="0"  max="10"></input></pre>
